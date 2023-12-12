@@ -14,12 +14,12 @@
 */
 
 
-#import "SQFilter.h"
-#import "SQSort.h"
-@protocol SQFilter;
-@class SQFilter;
-@protocol SQSort;
-@class SQSort;
+#import "SQSearchVendorsRequestFilter.h"
+#import "SQSearchVendorsRequestSort.h"
+@protocol SQSearchVendorsRequestFilter;
+@class SQSearchVendorsRequestFilter;
+@protocol SQSearchVendorsRequestSort;
+@class SQSearchVendorsRequestSort;
 
 
 
@@ -30,10 +30,10 @@
 
 /* Specifies a filter used to search for vendors. [optional]
  */
-@property(nonatomic) SQFilter* filter;
+@property(nonatomic) SQSearchVendorsRequestFilter* filter;
 /* Specifies a sorter used to sort the returned vendors. [optional]
  */
-@property(nonatomic) SQSort* sort;
+@property(nonatomic) SQSearchVendorsRequestSort* sort;
 /* A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See the [Pagination](https://developer.squareup.com/docs/working-with-apis/pagination) guide for more information. [optional]
  */
 @property(nonatomic) NSString* cursor;
