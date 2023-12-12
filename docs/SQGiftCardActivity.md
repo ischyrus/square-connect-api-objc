@@ -1,0 +1,31 @@
+# SQGiftCardActivity
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**_id** | **NSString*** | The Square-assigned ID of the gift card activity. | [optional] 
+**type** | **NSString*** | The type of gift card activity. | 
+**locationId** | **NSString*** | The ID of the [business location](https://developer.squareup.com/reference/square_2023-10-18/objects/Location) where the activity occurred. | 
+**createdAt** | **NSString*** | The timestamp when the gift card activity was created, in RFC 3339 format. | [optional] 
+**giftCardId** | **NSString*** | The gift card ID. When creating a gift card activity, &#x60;gift_card_id&#x60; is not required if  &#x60;gift_card_gan&#x60; is specified. | [optional] 
+**giftCardGan** | **NSString*** | The gift card account number (GAN). When creating a gift card activity, &#x60;gift_card_gan&#x60;  is not required if &#x60;gift_card_id&#x60; is specified. | [optional] 
+**giftCardBalanceMoney** | [**SQMoney***](SQMoney.md) | The final balance on the gift card after the action is completed. | [optional] 
+**loadActivityDetails** | [**SQGiftCardActivityLoad***](SQGiftCardActivityLoad.md) | Additional details about a &#x60;LOAD&#x60; activity, which is used to reload money onto a gift card. | [optional] 
+**activateActivityDetails** | [**SQGiftCardActivityActivate***](SQGiftCardActivityActivate.md) | Additional details about an &#x60;ACTIVATE&#x60; activity, which is used to activate a gift card with  an initial balance. | [optional] 
+**redeemActivityDetails** | [**SQGiftCardActivityRedeem***](SQGiftCardActivityRedeem.md) | Additional details about a &#x60;REDEEM&#x60; activity, which is used to redeem a gift card for a purchase.  For applications that process payments using the Square Payments API, Square creates a &#x60;REDEEM&#x60; activity that  updates the gift card balance after the corresponding [CreatePayment](https://developer.squareup.com/reference/square_2023-10-18/payments-api/create-payment)  request is completed. Applications that use a custom payment processing system must call  [CreateGiftCardActivity](https://developer.squareup.com/reference/square_2023-10-18/gift-card-activities-api/create-gift-card-activity) to create the &#x60;REDEEM&#x60; activity. | [optional] 
+**clearBalanceActivityDetails** | [**SQGiftCardActivityClearBalance***](SQGiftCardActivityClearBalance.md) | Additional details about a &#x60;CLEAR_BALANCE&#x60; activity, which is used to set the balance of a gift card to zero. | [optional] 
+**deactivateActivityDetails** | [**SQGiftCardActivityDeactivate***](SQGiftCardActivityDeactivate.md) | Additional details about a &#x60;DEACTIVATE&#x60; activity, which is used to deactivate a gift card. | [optional] 
+**adjustIncrementActivityDetails** | [**SQGiftCardActivityAdjustIncrement***](SQGiftCardActivityAdjustIncrement.md) | Additional details about an &#x60;ADJUST_INCREMENT&#x60; activity, which is used to add money to a gift card  outside of a typical &#x60;ACTIVATE&#x60;, &#x60;LOAD&#x60;, or &#x60;REFUND&#x60; activity flow. | [optional] 
+**adjustDecrementActivityDetails** | [**SQGiftCardActivityAdjustDecrement***](SQGiftCardActivityAdjustDecrement.md) | Additional details about an &#x60;ADJUST_DECREMENT&#x60; activity, which is used to deduct money from a gift  card outside of a typical &#x60;REDEEM&#x60; activity flow. | [optional] 
+**refundActivityDetails** | [**SQGiftCardActivityRefund***](SQGiftCardActivityRefund.md) | Additional details about a &#x60;REFUND&#x60; activity, which is used to add money to a gift card when  refunding a payment.  For applications that process payments using the Square Payments API, Square creates a &#x60;REFUND&#x60; activity that  updates the gift card balance after the corresponding [RefundPayment](https://developer.squareup.com/reference/square_2023-10-18/refunds-api/refund-payment)  request is completed. Applications that use a custom payment processing system must call  [CreateGiftCardActivity](https://developer.squareup.com/reference/square_2023-10-18/gift-card-activities-api/create-gift-card-activity) to create the &#x60;REFUND&#x60; activity. | [optional] 
+**unlinkedActivityRefundActivityDetails** | [**SQGiftCardActivityUnlinkedActivityRefund***](SQGiftCardActivityUnlinkedActivityRefund.md) | Additional details about an &#x60;UNLINKED_ACTIVITY_REFUND&#x60; activity. This activity is used to add money  to a gift card when refunding a payment that was processed using a custom payment processing system and not linked to the gift card. | [optional] 
+**importActivityDetails** | [**SQGiftCardActivityImport***](SQGiftCardActivityImport.md) | Additional details about an &#x60;IMPORT&#x60; activity, which Square uses to import a third-party  gift card with a balance. | [optional] 
+**blockActivityDetails** | [**SQGiftCardActivityBlock***](SQGiftCardActivityBlock.md) | Additional details about a &#x60;BLOCK&#x60; activity, which Square uses to temporarily block a gift card. | [optional] 
+**unblockActivityDetails** | [**SQGiftCardActivityUnblock***](SQGiftCardActivityUnblock.md) | Additional details about an &#x60;UNBLOCK&#x60; activity, which Square uses to unblock a gift card. | [optional] 
+**importReversalActivityDetails** | [**SQGiftCardActivityImportReversal***](SQGiftCardActivityImportReversal.md) | Additional details about an &#x60;IMPORT_REVERSAL&#x60; activity, which Square uses to reverse the  import of a third-party gift card. | [optional] 
+**transferBalanceToActivityDetails** | [**SQGiftCardActivityTransferBalanceTo***](SQGiftCardActivityTransferBalanceTo.md) | Additional details about a &#x60;TRANSFER_BALANCE_TO&#x60; activity, which Square uses to add money to a gift card as the result of a transfer from another gift card. | [optional] 
+**transferBalanceFromActivityDetails** | [**SQGiftCardActivityTransferBalanceFrom***](SQGiftCardActivityTransferBalanceFrom.md) | Additional details about a &#x60;TRANSFER_BALANCE_FROM&#x60; activity, which Square uses to deduct money from a gift as the result of a transfer to another gift card. | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

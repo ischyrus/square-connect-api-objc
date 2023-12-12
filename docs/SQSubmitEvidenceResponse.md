@@ -1,0 +1,11 @@
+# SQSubmitEvidenceResponse
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**errors** | [**NSArray&lt;SQError&gt;***](SQError.md) | Information about errors encountered during the request. | [optional] 
+**dispute** | [**SQDispute***](SQDispute.md) | The &#x60;Dispute&#x60; for which evidence was submitted. | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

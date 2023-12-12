@@ -1,0 +1,11 @@
+# SQPaymentBalanceActivityRefundDetail
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**paymentId** | **NSString*** | The ID of the payment associated with this activity. | [optional] 
+**refundId** | **NSString*** | The ID of the refund associated with this activity. | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
