@@ -20,7 +20,7 @@ The SDK requires [**ARC (Automatic Reference Counting)**](http://stackoverflow.c
 Add the following to the Podfile:
 
 ```ruby
-pod 'SquareConnectAPI', :git => 'https://github.com//.git'
+pod 'SquareConnectAPI', :git => 'https://github.com/ischyrus/square-connect-api-objc.git'
 ```
 
 To specify a particular branch, append `, :branch => 'branch-name-here'`
