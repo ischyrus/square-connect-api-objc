@@ -21,9 +21,9 @@ Pod::Spec.new do |s|
 
     s.framework    = 'SystemConfiguration'
 
-    s.homepage     = "https://github.com/swagger-api/swagger-codegen"
+    s.homepage     = "https://github.com/ischyrus/square-connect-api-objc.git"
     s.license      = "Proprietary"
-    s.source       = { :git => "https://github.com/swagger-api/swagger-codegen.git", :tag => "#{s.version}" }
+    s.source       = { :git => "https://github.com/ischyrus/square-connect-api-objc.git.git", :tag => "#{s.version}" }
     s.author       = { "Steven Schermerhorn" => "steven@thegardenstop.us" }
 
     s.source_files = 'SquareConnectAPI/**/*.{m,h}'
