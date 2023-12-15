@@ -55,6 +55,9 @@
 /* The ID of the item's category, if any. [optional]
  */
 @property(nonatomic) NSString* categoryId;
+/* A set of urls for images that are used on the ecommerce site. [optional]
+ */
+@property(nonatomic) NSArray<NSString*>* ecomImageUris;
 /* A set of IDs indicating the taxes enabled for this item. When updating an item, any taxes listed here will be added to the item. Taxes may also be added to or deleted from an item using `UpdateItemTaxes`. [optional]
  */
 @property(nonatomic) NSArray<NSString*>* taxIds;

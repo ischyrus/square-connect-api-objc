@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **availableForPickup** | **NSNumber*** | If &#x60;true&#x60;, the item can be added to pickup orders from the merchant&#39;s online store. | [optional] 
 **availableElectronically** | **NSNumber*** | If &#x60;true&#x60;, the item can be added to electronically fulfilled orders from the merchant&#39;s online store. | [optional] 
 **categoryId** | **NSString*** | The ID of the item&#39;s category, if any. | [optional] 
+**ecomImageUris** | **NSArray&lt;NSString*&gt;*** | A set of urls for images that are used on the ecommerce site. | [optional] 
 **taxIds** | **NSArray&lt;NSString*&gt;*** | A set of IDs indicating the taxes enabled for this item. When updating an item, any taxes listed here will be added to the item. Taxes may also be added to or deleted from an item using &#x60;UpdateItemTaxes&#x60;. | [optional] 
 **modifierListInfo** | [**NSArray&lt;SQCatalogItemModifierListInfo&gt;***](SQCatalogItemModifierListInfo.md) | A set of &#x60;CatalogItemModifierListInfo&#x60; objects representing the modifier lists that apply to this item, along with the overrides and min and max limits that are specific to this item. Modifier lists may also be added to or deleted from an item using &#x60;UpdateItemModifierLists&#x60;. | [optional] 
 **variations** | [**NSArray&lt;SQCatalogObject&gt;***](SQCatalogObject.md) | A list of [CatalogItemVariation](https://developer.squareup.com/reference/square_2023-10-18/objects/CatalogItemVariation) objects for this item. An item must have at least one variation. | [optional] 
